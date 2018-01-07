@@ -6,13 +6,14 @@ public class Menu : MonoBehaviour {
     public Player pl = new Player();
 
     public void OnStartGame(){
-		Debug.Log("pressed Start");
-		SceneManager.LoadScene("CharacterGeneration");
-	}
-	public void OnExitGame(){
-		Application.Quit();
-
-	}
+	Debug.Log("pressed Start");
+	SceneManager.LoadScene("CharacterGeneration");
+    }
+	
+    public void OnExitGame(){
+	Application.Quit();
+    }
+	
     public void ContinueGame()
     {
         SceneManager.LoadScene("Main");
